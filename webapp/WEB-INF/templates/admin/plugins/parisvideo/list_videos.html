@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+    <title>Service d'insertion de code HTML de Lutece</title>
+    <base href="${baseUrl}" />
+    <link rel="stylesheet" type="text/css" href="css/portal_admin.css" />
+	<script src="js/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+	<script src="js/jquery/plugins/ui/datepicker/ui.datepicker.js" type="text/javascript"></script>
+	<script src="js/jquery/plugins/ui/datepicker/ui.datepicker-fr.js" type="text/javascript"></script>
+</head>
+<body class="insert-service">
+
+
+<h2>Liste des vid&eacute;os</h2>
+<form action="jsp/admin/plugins/parisvideo/DoVideoChoose.jsp" name="form1">
+<input type="hidden" name="input" value="${input}" />
+<@pagination paginator=paginator /><br /><br />
+<#list videos as video>
+	<input type="radio" onclick="document.forms.form1.submit();" value="${video.assetId}" name="videoId" />
+	<a href="jsp/admin/plugins/parisvideo/DoVoirVideo.jsp?id=${video.assetId}"><img src="${video.thumbnail}" border="0" /></a><br />
+	${video.title}<br />
+	<br />
+	<br />
+</#list>
+<@pagination paginator=paginator /><br /><br /> 
+<p>
+	<input class="button" type="button" value="Retour" onclick="history.go(-1);" />
+</p>
+</form>
+
+</body>
+</html>

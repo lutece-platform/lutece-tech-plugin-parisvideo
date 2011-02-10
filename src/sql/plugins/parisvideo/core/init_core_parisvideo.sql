@@ -1,0 +1,3 @@
+INSERT INTO core_admin_right (id_right, name, level_right, admin_url, description, is_updatable, plugin_name, id_feature_group, icon_url, documentation_url, id_order) VALUES ('PARISVIDEO_MANAGEMENT','parisvideo.adminFeature.name',3,'jsp/admin/plugins/parisvideo/ManagePluginParisVideo.jsp','parisvideo.adminFeature.description',0,'parisvideo','APPLICATIONS',NULL,'jsp/admin/documentation/AdminDocumentation.jsp?doc=admin-parisvideo',14);
+INSERT INTO core_user_right (id_right, id_user) VALUES ('PARISVIDEO_MANAGEMENT',1);
+INSERT INTO core_user_right (id_right, id_user) VALUES ('PARISVIDEO_MANAGEMENT',2);

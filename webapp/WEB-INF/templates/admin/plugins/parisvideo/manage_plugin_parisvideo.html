@@ -1,0 +1,26 @@
+<div class="content-box" >
+	<#if msg >
+		<div class="success">#i18n{parisvideo.adminFeature.updateForm.successMsg}</div>
+	</#if>
+	<h2>#i18n{parisvideo.adminFeature.updateForm.title}</h2>
+	<div>
+		<form action="" name="parisvideoform">
+			<input type="hidden" name="action" value="insert_or_update" />
+				<p>
+					<label>#i18n{parisvideo.adminFeature.updateForm.name}</label>
+					<input type="text" name="name" value="${account.name}" />
+				</p>
+				<p>
+					<label>#i18n{parisvideo.adminFeature.updateForm.login}</label>
+					<input type="text" name="login" value="${account.login}" />
+				</p>
+				<p>
+					<label>#i18n{parisvideo.adminFeature.updateForm.password}</label>
+					<input type="password" name="password" value="${account.password}" />
+				</p>
+				<p>	
+					<input class="button" type="submit" />
+				</p>
+		</form>
+	</div>
+</div>

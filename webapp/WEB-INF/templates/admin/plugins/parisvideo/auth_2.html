@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+    <title>Service d'insertion de code HTML de Lutece</title>
+    <base href="${baseUrl}" />
+    <link rel="stylesheet" type="text/css" href="css/portal_admin.css" title="lutece_admin" />
+	<script src="js/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+	<script src="js/jquery/plugins/ui/datepicker/ui.datepicker.js" type="text/javascript"></script>
+	<script src="js/jquery/plugins/ui/datepicker/ui.datepicker-fr.js" type="text/javascript"></script>
+</head>
+<body class="insert-service">
+
+
+
+<h2>Crit&egrave;res de recherche</h2>
+<div>Vous pouvez configurer votre compte dans "Applications&gt;Gestion du compte Paris Video"</div>
+<div>&nbsp;</div>
+<form method="post" name="auth_2" id="auth_2" action="jsp/admin/plugins/parisvideo/DoAuth2.jsp">
+<input type="hidden" name="input" value="${input}" />
+<table>
+<tr>
+	<td>Domaines : </td>
+	<td>
+		<select name="domain">
+		<#list domains as domain>
+			<option value="${domain.id}">${domain.name}</option>
+		</#list>
+		</select>
+	</td>
+</tr>
+<tr>
+	<td>Mots cl&eacute;s : </td>
+	<td>
+		<input type="text" name="searchSubject" /> 
+	</td>
+</tr>
+<tr>
+	<td>Date de d&eacute;but : </td>
+	<td>
+		<input type="text" name="beginDate" id="beginDate" size="12" /> 
+	</td>
+</tr>
+<tr>
+	<td>Date de fin : </td>
+	<td>
+		<input type="text" name="endDate" id="endDate" size="12" /> 
+	</td>
+<tr>
+	<td colspan="2">
+		<br />
+		<p>
+			<input class="button" type="button" value="Retour" onclick="history.go(-1);" /> 
+			<input class="button" type="submit" value="Rechercher" />
+		</p>
+	</td>
+</tr>
+</table>
+</form>
+
+<script>
+	$(function() {
+		$("#beginDate").datepicker({
+			buttonImageOnly: true,
+			dateFormat: 'yy-mm-dd',
+		});
+		$("#endDate").datepicker({
+			buttonImageOnly: true,
+			dateFormat: 'yy-mm-dd',
+		});
+	});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plug-in>
+    <name>parisvideo</name>
+    <class>fr.paris.lutece.portal.service.plugin.PluginDefaultImplementation</class>
+    <version>0.0.4</version>
+    <description>parisvideo.label</description>
+    <documentation></documentation>
+    <installation></installation>
+    <changes></changes>
+    <user-guide></user-guide>
+    <provider>parisvideo.plugin.provider</provider>
+    <provider-url>http://lutece.paris.fr</provider-url>
+    <icon-url>images/admin/skin/plugins/parisvideo/parisvideo.png</icon-url>
+    <copyright>Copyright 2001-2009 Mairie de Paris</copyright>
+    <db-pool-required>1</db-pool-required>
+	<admin-features>
+		<admin-feature>
+			<feature-id>PARISVIDEO_MANAGEMENT</feature-id>
+			<feature-title>parisvideo.adminFeature.name</feature-title>
+			<feature-description>parisvideo.adminFeature.description</feature-description>
+			<feature-level>3</feature-level>
+			<feature-url>jsp/admin/plugins/parisvideo/ManagePluginParisVideo.jsp</feature-url>
+			<feature-icon-url>images/admin/skin/plugins/parisvideo/parisvideo.png</feature-icon-url>
+			<feature-documentation-url>jsp/admin/documentation/AdminDocumentation.jsp?doc=admin-parisvideo</feature-documentation-url>
+			<feature-group>APPLICATIONS</feature-group>
+		</admin-feature>
+	</admin-features>
+    <insert-services>
+        <insert-service>
+            <insert-service-id>INSERT_PARISVIDEO</insert-service-id>
+            <insert-service-name>parisvideo.name</insert-service-name>
+            <insert-service-bean-class>fr.paris.lutece.plugins.parisvideo.web.ParisvideoJspBean</insert-service-bean-class>
+            <insert-service-label>parisvideo.label</insert-service-label>
+        </insert-service>
+    </insert-services>
+</plug-in>
