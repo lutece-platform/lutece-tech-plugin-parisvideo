@@ -42,6 +42,6 @@
     <scm>
         <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/technical/plugin-parisvideo</connection>
         <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/technical/plugin-parisvideo</developerConnection>
-        <url>http://dev.lutece.paris.fr/viewvc/portal/trunk/plugins/technical/plugin-parisvideo</url>
+        <url>http://dev.lutece.paris.fr/viewvc/lutece/portal/trunk/plugins/technical/plugin-parisvideo</url>
     </scm>
 </project>
