@@ -1,5 +1,6 @@
 package fr.paris.lutece.plugins.parisvideo.service;
 
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.List;
@@ -18,8 +19,6 @@ import com.tvnavig.server.user.UserServiceService;
 import com.tvnavig.server.user.UserServiceServiceLocator;
 import com.tvnavig.server.user.service.common.UserDomainResult;
 import com.tvnavig.server.user.service.common.UserServiceResult;
-
-import edu.emory.mathcs.backport.java.util.Arrays;
 
 /**
  * This class allows to get video from ParisTV (from wsdl files with Axis 1.4)

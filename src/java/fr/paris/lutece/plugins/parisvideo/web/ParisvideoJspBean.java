@@ -33,6 +33,7 @@
  */
 package fr.paris.lutece.plugins.parisvideo.web;
 
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.HashMap;
@@ -47,7 +48,6 @@ import com.tvnavig.server.searchengine.service.common.AssetOGC;
 import com.tvnavig.server.searchengine.service.common.AssetPlayer;
 import com.tvnavig.server.user.service.common.UserDomainResult;
 
-import edu.emory.mathcs.backport.java.util.Arrays;
 import fr.paris.lutece.plugins.parisvideo.business.ParisVideoAccount;
 import fr.paris.lutece.plugins.parisvideo.business.ParisVideoHome;
 import fr.paris.lutece.plugins.parisvideo.service.ParisvideoService;
