@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document>
 	<properties>
-		<title>Plugin</title>
+		<title>Plugin parisvideo</title>
 	</properties>
 	<body>
-		<section name="Plugin">
+		<section name="Plugin parisvideo">
 			<subsection name="Introduction">
+			Permet d'insérer des vidéos de ParisVideo dans une page de Lutece.
 			</subsection>
 		</section>
 	</body>
