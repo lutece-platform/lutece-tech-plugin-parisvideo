@@ -10,6 +10,24 @@
     <packaging>lutece-plugin</packaging>
     <version>0.0.5-SNAPSHOT</version>
     <name>Lutece paris video plugin</name>
+    <repositories>
+        <repository>
+            <id>luteceSnapshot</id>
+            <name>luteceSnapshot</name>
+            <url>http://dev.lutece.paris.fr/snapshot_repository</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>lutece</id>
+            <name>luteceRepository</name>
+            <url>http://dev.lutece.paris.fr/maven_repository</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
     <dependencies>
         <dependency>
             <groupId>fr.paris.lutece</groupId>
